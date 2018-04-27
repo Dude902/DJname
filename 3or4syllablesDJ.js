@@ -1,4 +1,4 @@
-//Derived from Gizoogle 2.0 (gizoogle2.tumblr.com)
+//Syllable counter derived from Gizoogle 2.0 (gizoogle2.tumblr.com)
 
 var useclassic = 1;
 
@@ -120,6 +120,7 @@ if (useclassic == 1)
 
 		if (numofvowels[i][j]==3)
 		{
+		if !(ssplit[i][j].toString() in DJNameWords)
 		DJNameWords.push(ssplit[i][j].toString());
 		/*newword = ssplit[i][j].toString().substr(0, vowelfoundat[i][j][2]) + "izzle";
 			if (lastletter[i][j] != ssplit[i][j].toString().length-1)
@@ -130,6 +131,7 @@ if (useclassic == 1)
 
 		if (numofvowels[i][j]==4)
 		{
+		if !(ssplit[i][j].toString() in DJNameWords)
 		DJNameWords.push(ssplit[i][j].toString());
 		/*newword = ssplit[i][j].toString().substr(0, vowelfoundat[i][j][3]) + "izzle";
 			if (lastletter[i][j] != ssplit[i][j].toString().length-1)
