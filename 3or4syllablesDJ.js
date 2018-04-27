@@ -56,7 +56,6 @@ for (var i = 0; i < textnodes.snapshotLength; i++) {
 	firstletter[i]=new Array();
 		firstletterchecked[i]=new Array();
 	lastletter[i]=new Array();
-	foundexception[i]=new Array();
 
 	ssplitchar[i]= new Array();
 	ssplit[i]= new Array();
@@ -71,7 +70,6 @@ for (var j = 0; j < ssplit[i].length ; j++){
 	doublefoundat[i][j]= new Array;
 		doublefoundat[i][j][0]=0;
 	numofvowels[i][j]=0;
-	foundexception[i][j]=0;
 	firstletter[i][j]=0;
 		firstletterchecked[i][j]=0;
 
