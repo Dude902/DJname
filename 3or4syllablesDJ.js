@@ -162,6 +162,6 @@ else
 //var savedFile_JsonStringData = JSON.stringify(nameData);
 
 }
-alert(DJNameWords);
+alert("DJ " + DJNameWords.join("\nDJ "));
 }
 DJ();
