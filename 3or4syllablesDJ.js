@@ -121,7 +121,7 @@ if (useclassic == 1)
 		if (numofvowels[i][j]==3)
 		{
 		if (DJNameWords.indexOf(ssplit[i][j].toString()) == -1)
-		DJNameWords.push(ssplit[i][j].toString());
+		DJNameWords.push(ssplit[i][j].toString().firstletter[i][j]);
 		/*newword = ssplit[i][j].toString().substr(0, vowelfoundat[i][j][2]) + "izzle";
 			if (lastletter[i][j] != ssplit[i][j].toString().length-1)
 			{
@@ -164,6 +164,29 @@ else
 //var savedFile_JsonStringData = JSON.stringify(nameData);
 
 }
+
+//shuffle array function
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+DJNameWords = shuffle(DJNameWords);
+
 alert("DJ " + DJNameWords.join("\nDJ "));
+console.log("DJ " + DJNameWords.join("\nDJ "));
 }
 DJ();
