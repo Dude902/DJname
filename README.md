@@ -1,5 +1,5 @@
 # djname
-Looks for 3-4 syllable words on a page to turn into DJ names.
+Looks for 3-4 syllable words on a page to turn into DJ names. Very basic and buggy.
 
 To run, copy and paste this as a bookmark and use it whenever (some site's security does not allow the script to run):
 
