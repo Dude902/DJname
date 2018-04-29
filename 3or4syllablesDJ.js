@@ -1,4 +1,3 @@
-//Syllable counter derived from Gizoogle 2.0 (gizoogle2.tumblr.com)
 
 var useclassic = 1;
 
@@ -114,7 +113,7 @@ if (numofvowels[i][j]==0 && ssplit[i][j].toString().charAt(lastletter[i][j]) in 
 /***************************************************************************************************************************/
 	
 //GET ALL 3 OR 4 VOWEL WORDS
-//classic gizoogle way
+//classic way
 if (useclassic == 1)
 	{
 
@@ -141,7 +140,7 @@ if (useclassic == 1)
 		}
 
 	 }
-//new gizoogle way
+//new way not fixed yet
 /*
 else
 	{
@@ -149,7 +148,6 @@ else
 		{
 			if (numofvowels[i][j]==2 && ssplit[i][j].charAt(firstletter[i][j]) in vowels) var numsyllables=2;
 			else var numsyllables=Math.floor(Math.random() * (numofvowels[i][j] - Math.round(numofvowels[i][j]/2) + 1)) + Math.round(numofvowels[i][j]/2);
-			newword = ssplit[i][j].toString().substr(0, vowelfoundat[i][j][numsyllables]) + "izzle";
 				if (lastletter[i][j] != ssplit[i][j].toString().length-1)
 				{
 				newword = newword + ssplit[i][j].toString().substr(lastletter[i][j]+1);
